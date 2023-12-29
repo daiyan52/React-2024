@@ -3,4 +3,8 @@
     margin-bottom: 10px;
     border-radius: 15px;
     padding: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: baseline; */
 }
