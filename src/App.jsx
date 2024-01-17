@@ -1,9 +1,15 @@
-import './App.css'
+// import './App.css'
+import AmazonCardTab from './Components/AmazonCardTab';
+import MessageBox from './Components/MessageBox';
 import ProductTab from './Components/ProductTab';
 import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
-    <ProductTab/>
+    <>
+    <AmazonCardTab/>
+    {/* <MessageBox/>  */}
+    {/* <ProductTab/>  */}
+    </>
    )
 }
 

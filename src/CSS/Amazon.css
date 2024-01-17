@@ -1,0 +1,16 @@
+.AmazonCard{
+    border-radius: 10px;
+    background-color: #a7eded;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+}
+
+.oldPrice{
+    text-decoration: line-through;
+    color: red;
+}

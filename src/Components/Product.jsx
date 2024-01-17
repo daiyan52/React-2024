@@ -8,15 +8,17 @@ function Product({title,price,options}){
           <li key={index}>{option}</li>
         ))
       ) : null;
-    
-    
-    return(
-        <div className="Product">
+
+      let isDiscount = price >= 30000 ? "Discount : 15%" : "Discount : 5%";
+      let styles = {backgroundColor : price >= 30000 ? "yellow" : "cyan"};
+      return(
+        <div className="Product" style = {styles}>
             <div>
                 <h2 className='text-danger'>{title}</h2>
                 <h3 className="text-muted">Price: {price}</h3>
                 {list && <ol>{list}</ol>}
-                <button className="btn btn-primary">Read Details</button>
+                <p>{isDiscount}</p>
+                 <button className="btn btn-primary">Read Details</button>
              </div>
         </div>
     )
